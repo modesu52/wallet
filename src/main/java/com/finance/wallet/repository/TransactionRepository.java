@@ -27,6 +27,4 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 
     // Найти все транзакции, где описание содержит слово (без учета регистра)
     List<Transaction> findByDescriptionContainingIgnoreCase(String keyword);
-
-
 }
